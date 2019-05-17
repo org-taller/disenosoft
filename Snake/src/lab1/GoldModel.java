@@ -108,7 +108,6 @@ public class GoldModel extends GameModel {
 		// Insert coins into the gameboard.
 		for (int i = 0; i < COIN_START_AMOUNT; i++) {
 			addCoin();
-			
 		}
 	}
 
@@ -198,7 +197,6 @@ public class GoldModel extends GameModel {
 
 		// Remove the coin at the new collector position (if any)
 		if (this.coins.remove(this.collectorPos)) {
-			this.score++;
 			this.score++;
 		}
 
