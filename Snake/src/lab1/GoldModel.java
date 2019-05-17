@@ -55,9 +55,11 @@ public class GoldModel extends GameModel {
 	 */
 
 	/** Graphical representation of a coin. */
+
 	private static final GameTile COIN_TILE = new RoundTile(new Color(255, 215,
 			0),
 			new Color(51, 204, 255), 2.0);
+
 
 	
 			
@@ -108,7 +110,6 @@ public class GoldModel extends GameModel {
 		// Insert coins into the gameboard.
 		for (int i = 0; i < COIN_START_AMOUNT; i++) {
 			addCoin();
-			
 		}
 	}
 
@@ -198,6 +199,7 @@ public class GoldModel extends GameModel {
 
 		// Remove the coin at the new collector position (if any)
 		if (this.coins.remove(this.collectorPos)) {
+
 			this.score++;
 			this.score++;
 			this.score++;
